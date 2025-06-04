@@ -2,7 +2,7 @@
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
-        int input = 1;
+        int input = 0;
 
         do {
             System.out.println("안녕하세요 자판기 입니다.");
@@ -21,6 +21,7 @@ public class Main {
                     System.out.println("잘못 선택하셨습니다.");
 
             }
-        } while (input == 0);
+            input = 0;
+        } while (input != 0);
     }
 }
