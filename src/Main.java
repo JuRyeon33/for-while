@@ -2,10 +2,16 @@
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
-       for(int i = 20; i > 0; i--) {
-           if(i % 4 == 0) {
-               System.out.println("i는 " + i);
-           }
-       }
+        boolean a = true;
+        int b = 1;
+
+        while (a) {
+            System.out.println(b);
+            b++;
+
+            if (b > 10000) {
+                a = false;
+            }
+        }
     }
 }
